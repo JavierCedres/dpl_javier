@@ -87,7 +87,7 @@ Cuando esté la rama terminada con los cambios requridos se hará un Pull Reques
 
 <img src="./files/imgs/PullRequestSolicitada_8.png"></img>
 
-Se envia el Pull Request al repositorio original para que se puedan realizar las pruebas requeridas.
+Se envía el Pull Request al repositorio original para que se puedan realizar las pruebas requeridas.
 
 ##### 8. Probar el PR, añadir repositorio remoto y subir cambios al PR
 <img src="./files/imgs/AddRespositorioRemoto_9.png"></img>
