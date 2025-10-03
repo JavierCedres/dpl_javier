@@ -1,0 +1,12 @@
+location / {
+        root /home/dpl_javier/dpl_javier/ut2/a1;
+        index calculadora.php;
+    }
+
+    location /calculadora.php {
+        root /home/dpl_javier/dpl_javier/ut2/a1;
+        index calculadora.php;
+    }
+
+
+sudo nano /etc/nginx/conf.d/default.conf

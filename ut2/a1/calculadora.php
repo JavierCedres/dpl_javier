@@ -9,7 +9,10 @@
                         <option>Multiplicación</option>
                         <option>División</option>
                 </select>
-        <p>
+	</p>
+	<img src="./calculadora.png" />
+	<br>
+	<br>
         <button type="submit">Calcular</button>
 </form>
 <?php
