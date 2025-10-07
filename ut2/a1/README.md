@@ -70,6 +70,8 @@ También tuve que darle permisos a las carpetas en las que se encontraba mi calc
 
 Al configurar esto ya podemos ver la calculadora mientras trabajamos desde nuestro repositorio.
 
+<img src="./imgs/calculadoraNativa.png"/> 
+
 ##### 3. Instalación de docker
 
 Al igual que con Nginx y PHP instalamos docker en clase, los comandos que usamos fueron:
@@ -119,10 +121,12 @@ Creamos una imagen mediante docker build.
 
 Y por último creamos el contenedor a partir de esa imagen.
 
+<img src="./imgs/calculadoraDockerizada.png"/>
+
 ##### Dificultades
 
 La dificultad que tuve fue que instalé una versión de Nginx distinta a la que instalamos en clase a la hora de hacer la parte dockerizada, lo solucione buscando mi problema en Google, gracias a un post en Stack Overflow ví que la ruta correcta era **/etc/nginx/sites-available/default** en lugar de **/etc/nginx/conf.d/default.conf**
 
 #### ***Conclusiones***. <a name="id5"></a>
 
-En esta parte debemos exponer las conclusiones que sacamos del desarrollo de la prácica.
+Gracias a esta tarea he aprendido a manejar docker(crear imagenes, contenedores, configurar imagenes con Dockerfile, etc.) y Nginx.
