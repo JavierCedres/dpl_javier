@@ -36,14 +36,16 @@ La version instalada es:
 
 Creamos un rol de acceso a la base de datos:
 
-<img src="./img/Captura de pantalla 2025-11-12 152216.png" />
-
 Cargamos en la tabla creada en la base de datos los sitios visitados y no visitados
+
+<img src="./img/Captura de pantalla 2025-11-12 152216.png" />
 
 ##### Instalación y configuración de PGAdmin
 
 Instalamos pgadmin dentro del entrono virtual
 
-<img src="./img/Captura de pantalla 2025-11-12 152216.png" />
+<img src="./img/Captura de pantalla 2025-11-12 155113.png" />
 
 Configuramos un virtualhost en nginx
+
+<img src="./img/Captura de pantalla 2025-11-12 163231.png" />
