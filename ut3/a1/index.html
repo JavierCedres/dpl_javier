@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nginx + ngx_small_light<h1>
+    <form id="formulario">
+            <p>Tamaño: <input id="tamanio" type="number" /></p>
+            <p>Ancho del borde: <input id="ancho" type="number" /></p>
+            <p>Color del borde: <input id="color" type="text" /></p>
+            <p>Enfoque: <input id="enfoque" type="text" /></p>
+            <p>Desenfoque: <input id="desenfoque" type="text" /></p>
+            <button type="submit">Generar</button>
+    </form>
+
+    <div id="images"></div>
+
+    <script>
+        const form = document.getElementById("formulario");
+        const images = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"]
+
+        formulario.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const tamanio = form.tamanio.value;
+            const ancho = form.ancho.value;
+            const color = form.color.value;
+            const enfoque = form.enfoque.value;
+            const desenfoque = form.desenfoque.value;
+
+            const imagesDiv = document.getElementById("images");
+            imagesDiv.innerHTML = "";
+
+            for (let i = 0; i < images.length; i++) {
+                const img = document.createElement("img");
+                img.src = `http://images.javier.me/img/image${images[i]}.jpg?dw=${tamanio}&dh=${tamanio}&bw=${ancho}&bh=${ancho}&bc=${color}&sharpen=${enfoque}&blur=${desenfoque}`;
+                imagesDiv.appendChild(img);
+            }
+        })
+    </script>
+</body>
+</html>
