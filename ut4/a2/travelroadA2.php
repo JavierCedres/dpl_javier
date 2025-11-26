@@ -1,6 +1,6 @@
 <?php
 
-include "/home/dpl_javier/config.php";
+include "/etc/nginx/config.php";
 
 $db_handle = pg_connect("host=$host dbname=$dbName user=$user password=$passwd");
 
