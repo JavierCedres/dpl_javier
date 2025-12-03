@@ -55,5 +55,12 @@ Conectar servidor con la base de datos:
 
 ##### Aplicación PHP en entorno de desarrollo
 
-Para poder hacer la aplicación PHP necesitaremos conectarnos a la base de datos con pg_connect, para ello tenemos que instalar `php8.4-pgsql`
+Para poder hacer la aplicación PHP necesitaremos conectarnos a la base de datos con pg_connect, para ello tenemos que instalar `php8.4-pgsql`:
+
+<img src="./imgs/pgsql.png" />
+
+Creamos la aplicación PHP:
+
+<img src="./imgs/travelroadPHP.png" />
+
 
