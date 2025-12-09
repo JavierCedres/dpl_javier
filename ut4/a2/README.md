@@ -7,6 +7,7 @@
 </center>
 
 ***Nombre:*** Javier Marcelo Cedrés González
+
 ***Curso:*** 2º de Ciclo Superior de Desarrollo de Aplicaciones Web.
 
 ### ÍNDICE
@@ -94,4 +95,7 @@ Y por último creamos una redirección desde www hasta nuestro servidor:
 **Aplicación PHP en producción:** http://php.travelroad.javier.arkania.es
 
 ##### 4. Script de despliegue
+
+
+
 
