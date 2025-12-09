@@ -83,6 +83,10 @@ Creamos el fichero en el que se encontrarán las credenciales de la base de dato
 
 <img src="./imgs/configPHPProd.png" />
 
+Añadimos un virtual host igual que el de la máquina de desarrollo pero con distinto server_name:
 
+<img src="./imgs/travelroadConfProd" />
+
+Y por último creamos una redirección desde www hasta nuestro servidor:
 
 
