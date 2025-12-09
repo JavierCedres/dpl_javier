@@ -25,11 +25,11 @@ Dos máquinas, una para desarrollo y otra para producción.
 
 #### ***Desarrollo***. <a name="id4"></a>
 
-##### Instalar PostgreSQL, crear una base de datos travelroad con datos, virtualhost nginx.
+##### 1. Instalar PostgreSQL, crear una base de datos travelroad con datos, virtual host nginx.
 
 **En la máquina de desarrollo:** La instalación de PostgreSQL, la creación de la base de datos y la carga de datos ya fueron hechas en la práctica 1 del tema 4 [UT4A1](https://github.com/JavierCedres/dpl_javier/blob/main/ut4/a1/README.md).
 
-Creación del virtualhost:
+Creación del virtual host:
 
 <img src="./imgs/pgadminConf.png" />
 
@@ -43,7 +43,7 @@ Conectar servidor con la base de datos:
 
 <img src="./imgs/travelroadUserProd.png" />
 
-El virtualhost de producción es el mismo pero cambiando el nombre del dominio:
+El virtual host de producción es el mismo pero cambiando el nombre del dominio:
 
 <img src="./imgs/pgadminConfProd.png" />
 
@@ -53,14 +53,36 @@ Conectar servidor con la base de datos:
 
 **URL pgadmin:** http://pgadmin.javier.arkania.es
 
-##### Aplicación PHP en entorno de desarrollo
+##### 2.Aplicación PHP en entorno de desarrollo
 
 Para poder hacer la aplicación PHP necesitaremos conectarnos a la base de datos con pg_connect, para ello tenemos que instalar `php8.4-pgsql`:
 
 <img src="./imgs/pgsql.png" />
 
-Creamos la aplicación PHP:
+Creamos la aplicación PHP dentro de nuestro repositorio:
 
 <img src="./imgs/travelroadPHP.png" />
+
+Añadimos un virtual host y lo configuramos con server_name **php.travelroad.local**, php y nuestra aplicación php para poder verla en el navegador:
+
+<img src="./imgs/travleroadConf.png" />
+
+Para que no se suban la contraseña y el usuario de nuestra base de datos a Github creamos otro fichero fuera del repositorio y lo incluimos en la aplicación php con **include**:
+
+<img src="./imgs/configPHP.png" />
+
+[Código fuente aplicación PHP](https://github.com/JavierCedres/dpl_javier/blob/main/ut4/a2/travelroadA2.php)
+
+##### 3.Aplicación PHP en entorno de producción
+
+Lo primero que hacemos es clonar el repositorio en el que hemos creado la aplicación:
+
+<img src="./imgs/repositoryClonedProd.png" />
+
+Creamos el fichero en el que se encontrarán las credenciales de la base de datos de producción:
+
+<img src="./imgs/configPHPProd.png" />
+
+
 
 
