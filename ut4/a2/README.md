@@ -96,6 +96,14 @@ Y por último creamos una redirección desde www hasta nuestro servidor:
 
 ##### 4. Script de despliegue
 
+Para acabar hacemos un script que se conecte a la máquina de producción y haga un ``git pull`` para traer los cambios en el repositorio:
 
+<img src="./imgs/deploy.png" />
 
+Le damos permisos de ejecución:
 
+<img src="./imgs/deployPermisos.png" />
+
+Para comprobar que funciona realizamos algún cambio y ejecutamos el script:
+
+<img src="./imgs/execDeploysh.png" />
