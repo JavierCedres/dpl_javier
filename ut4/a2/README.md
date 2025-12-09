@@ -53,7 +53,7 @@ Conectar servidor con la base de datos:
 
 **URL pgadmin:** http://pgadmin.javier.arkania.es
 
-##### 2.Aplicación PHP en entorno de desarrollo
+##### 2. Aplicación PHP en entorno de desarrollo
 
 Para poder hacer la aplicación PHP necesitaremos conectarnos a la base de datos con pg_connect, para ello tenemos que instalar `php8.4-pgsql`:
 
@@ -73,7 +73,7 @@ Para que no se suban la contraseña y el usuario de nuestra base de datos a Gith
 
 [Código fuente aplicación PHP](https://github.com/JavierCedres/dpl_javier/blob/main/ut4/a2/travelroadA2.php)
 
-##### 3.Aplicación PHP en entorno de producción
+##### 3. Aplicación PHP en entorno de producción
 
 Lo primero que hacemos es clonar el repositorio en el que hemos creado la aplicación:
 
@@ -85,8 +85,13 @@ Creamos el fichero en el que se encontrarán las credenciales de la base de dato
 
 Añadimos un virtual host igual que el de la máquina de desarrollo pero con distinto server_name:
 
-<img src="./imgs/travelroadConfProd" />
+<img src="./imgs/travelroadConfProd.png" />
 
 Y por último creamos una redirección desde www hasta nuestro servidor:
 
+<img src="./imgs/travelroadWWWRedirect.png" />
+
+**Aplicación PHP en producción:** http://php.travelroad.javier.arkania.es
+
+##### 4. Script de despliegue
 
