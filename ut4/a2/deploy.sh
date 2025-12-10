@@ -2,7 +2,7 @@
 
 git add . ; git commit -m "deploy" ; git push
 
-sudo ssh-copy-id -i dplprod_javier@10.102.6.40
+sudo ssh-copy-id -i /home/dpl_javier/.ssh/id_rsa.pub dplprod_javier@10.102.6.40
 
 ssh dplprod_javier@10.102.6.40 "
   cd dpl_javier
