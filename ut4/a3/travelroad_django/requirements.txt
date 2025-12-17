@@ -1,5 +1,3 @@
 django
-libpq-dev
-python3-dev
 psycopg2
 prettyconf
