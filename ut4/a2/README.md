@@ -107,3 +107,8 @@ Le damos permisos de ejecución:
 Para comprobar que funciona realizamos algún cambio y ejecutamos el script:
 
 <img src="./imgs/execDeploysh.png" />
+
+Adicionalmente podemos pasarle a la máquina de producción nuestra clave pública para poder conectarnos sin que nos pida la contraseña:
+
+
+
