@@ -98,7 +98,7 @@ Y por último creamos una redirección desde www hasta nuestro servidor:
 
 Para acabar hacemos un script que se conecte a la máquina de producción y haga un ``git pull`` para traer los cambios en el repositorio:
 
-<img src="./imgs/deploy.png" />
+<img src="./imgs/deploy2.png" />
 
 Le damos permisos de ejecución:
 
@@ -109,6 +109,8 @@ Para comprobar que funciona realizamos algún cambio y ejecutamos el script:
 <img src="./imgs/execDeploysh.png" />
 
 Adicionalmente podemos pasarle a la máquina de producción nuestra clave pública para poder conectarnos sin que nos pida la contraseña:
+
+<img src="./imgs/sshCopyId.png" />
 
 
 
