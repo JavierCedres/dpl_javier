@@ -1,0 +1,9 @@
+<h2>Places I'd Like to Visit</h2>
+
+<ul>
+  {% for place in wished %}
+  <li>{{ place }}</li>
+  {% endfor %}
+</ul>
+
+<p><a href="{% url 'places:index' %}">← Back home</a></p>

@@ -1,0 +1,9 @@
+<h2>Places I've Already Been To</h2>
+
+<ul>
+  {% for place in visited %}
+  <li>{{ place }}</li>
+  {% endfor %}
+</ul>
+
+<p><a href="{% url 'places:index' %}">← Back home</a></p>
