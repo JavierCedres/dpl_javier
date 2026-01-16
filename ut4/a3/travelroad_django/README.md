@@ -106,7 +106,7 @@ Se crea una vista(controlador) con tres funciones, una que muestre los sitios vi
 
 Se crea un ``urls.py`` en places para registrar las urls de la aplicación.
 
-<img src="../imgs/Captura de pantalla 2026-01-16 140551.png" />
+<img src="../imgs/imagen_2026-01-16_213510114.png" />
 
 ##### 13. Cambio en ``urls.py`` de *main*
 
@@ -138,78 +138,34 @@ Se crea un fichero llamado ``requirements.txt`` en el cual se incluyen las depen
 
 **URL pgadmin:** http://pgadmin.local
 
-**En la máquina de producción:** La instalación de PostgreSQL es exactamente igual que en la máquina de desarrollo, para la base de datos la creación y la carga de datos son iguales pero en esta ocasión creamos un usuario con distintas credenciales.
+**En la máquina de producción:** 
 
-<img src="./imgs/travelroadUserProd.png" />
+##### 1. Preparación del entorno.
 
-El virtual host de producción es el mismo pero cambiando el nombre del dominio:
+Se crea un entorno virtual y se instalan las dependencias necesarias haciendo uso del fichero ``requirements.txt``
 
-<img src="./imgs/pgadminConfProd.png" />
+<img src="../imgs/Captura de pantalla 2026-01-16 184610.png" />
 
-Conectar servidor con la base de datos:
+##### 2. Instalación de gunicorn.
 
-<img src="./imgs/travelroadServer2.png" />
+Se instala gunicorn, un servidor de aplicación que nos permitira iniciar nuestro proyecto.
 
-**URL pgadmin:** http://pgadmin.javier.arkania.es
+<img src="../imgs/Captura de pantalla 2026-01-16 185725.png" />
 
-##### 2. Aplicación PHP en entorno de desarrollo
+##### 3. Creación del virtual host.
 
-Para poder hacer la aplicación PHP necesitaremos conectarnos a la base de datos con pg_connect, para ello tenemos que instalar `php8.4-pgsql`:
+Se crea un virtual host que se conecte a gunicorn.
 
-<img src="./imgs/pgsql.png" />
+<img src="../imgs/Captura de pantalla 2026-01-16 190203.png" />
 
-Creamos la aplicación PHP dentro de nuestro repositorio:
+##### 4. Creación de script ``run.sh``.
 
-<img src="./imgs/travelroadPHP.png" />
+Creamos un script para iniciar el servidor gunicorn.
 
-Añadimos un virtual host y lo configuramos con server_name **php.travelroad.local**, php y nuestra aplicación php para poder verla en el navegador:
+<img src="../imgs/Captura de pantalla 2026-01-16 190243.png" />
 
-<img src="./imgs/travleroadConf.png" />
+##### 5. Script de deploy.
 
-Para que no se suban la contraseña y el usuario de nuestra base de datos a Github creamos otro fichero fuera del repositorio y lo incluimos en la aplicación php con **include**:
+Creamos un script para iniciar el servidor gunicorn.
 
-<img src="./imgs/configPHP.png" />
-
-[Código fuente aplicación PHP](https://github.com/JavierCedres/dpl_javier/blob/main/ut4/a2/travelroadA2.php)
-
-##### 3. Aplicación PHP en entorno de producción
-
-Lo primero que hacemos es clonar el repositorio en el que hemos creado la aplicación:
-
-<img src="./imgs/repositoryClonedProd.png" />
-
-Creamos el fichero en el que se encontrarán las credenciales de la base de datos de producción:
-
-<img src="./imgs/configPHPProd.png" />
-
-Añadimos un virtual host igual que el de la máquina de desarrollo pero con distinto server_name:
-
-<img src="./imgs/travelroadConfProd.png" />
-
-Y por último creamos una redirección desde www hasta nuestro servidor:
-
-<img src="./imgs/travelroadWWWRedirect.png" />
-
-**Aplicación PHP en producción:** http://php.travelroad.javier.arkania.es
-
-##### 4. Script de despliegue
-
-Para acabar hacemos un script que se conecte a la máquina de producción y haga un ``git pull`` para traer los cambios en el repositorio:
-
-<img src="./imgs/deploy2.png" />
-
-Le damos permisos de ejecución:
-
-<img src="./imgs/deployPermisos.png" />
-
-Para comprobar que funciona realizamos algún cambio y ejecutamos el script:
-
-<img src="./imgs/execDeploysh.png" />
-
-Adicionalmente podemos pasarle a la máquina de producción nuestra clave pública para poder conectarnos sin que nos pida la contraseña:
-
-<img src="./imgs/sshCopyId.png" />
-
-
-
-
+<img src="../imgs/Captura de pantalla 2026-01-16 190243.png" />
