@@ -5,6 +5,7 @@ class Place(models.Model):
     visited = models.BooleanField()
 
     class Meta:
+        # ↓ necesario porque ya partimos de una tabla creada ↓
         db_table = "places"
 
     def __str__(self):
