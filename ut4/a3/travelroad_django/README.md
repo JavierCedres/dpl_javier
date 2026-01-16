@@ -166,6 +166,6 @@ Creamos un script para iniciar el servidor gunicorn.
 
 ##### 5. Script de deploy.
 
-Creamos un script para iniciar el servidor gunicorn.
+El script de deploy se conecta a la máquina de producción, trae los cambios del repositorio, activa el entorno virtual, instala las dependencias necesarias y ejecuta run.sh para iniciar gunicorn.
 
-<img src="../imgs/Captura de pantalla 2026-01-16 190243.png" />
+<img src="../imgs/imagen_2026-01-16_214706606.png" />
