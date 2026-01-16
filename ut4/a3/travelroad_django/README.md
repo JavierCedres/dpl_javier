@@ -134,7 +134,7 @@ Se añade prettyconf para la configuración de la base de datos.
 
 Se crea un fichero llamado ``requirements.txt`` en el cual se incluyen las dependencias necesarias para que el proyecto funcione, esto se hace para que a la hora del despliegue se puedan instalar facilmente.
 
-
+<img src="../imgs/Captura de pantalla 2026-01-16 143556.png" />
 
 **URL pgadmin:** http://pgadmin.local
 
