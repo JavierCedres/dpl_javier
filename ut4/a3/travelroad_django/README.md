@@ -26,6 +26,8 @@ Dos máquinas, una para desarrollo y otra para producción.
 
 #### ***Desarrollo***. <a name="id4"></a>
 
+**Aplicación desplegada:** http://django.travelroad.javier.arkania.es
+
 **En la máquina de desarrollo:**
 
 ##### 1. Creación del entrono virtual.
@@ -74,7 +76,7 @@ Descarga del paquete psycopg2-binary para permitir las conexiones a bases de dat
 
 Se cambia la configuración de la base de datos de la aplicación django para que se conecte correctamente a la base de datos.
 
-<img src="../imgs/Captura de pantalla 2026-01-16 140043.png" />
+<img src="../imgs/Captura de pantalla 2026-01-16 140229.png" />
 
 ##### 9. Creación del modelo Place.
 
@@ -135,8 +137,6 @@ Se añade prettyconf para la configuración de la base de datos.
 Se crea un fichero llamado ``requirements.txt`` en el cual se incluyen las dependencias necesarias para que el proyecto funcione, esto se hace para que a la hora del despliegue se puedan instalar facilmente.
 
 <img src="../imgs/Captura de pantalla 2026-01-16 143556.png" />
-
-**URL pgadmin:** http://pgadmin.local
 
 **En la máquina de producción:** 
 
