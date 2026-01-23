@@ -5,4 +5,4 @@
     @endforeach
 </ul>
 
-<a href="{{ route('index') }}">Back home</a>
+<a href="{{ route('travelroad') }}">Back home</a>
