@@ -3,4 +3,6 @@
     @foreach ($visited as $place)
         <li>{{ $place->name }}</li>
     @endforeach
-</ul
+</ul>
+
+<a href="{{ route('index') }}">Back home</a>
