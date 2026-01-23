@@ -5,18 +5,9 @@
 
   <body>
     <h1>My Travel Bucket List</h1>
-    <h2>Places I'd Like to Visit</h2>
-    <ul>
-      @foreach ($wished as $place)
-      <li>{{ $place->name }}</li>
-      @endforeach
-    </ul>
-
-    <h2>Places I've Already Been To</h2>
-    <ul>
-      @foreach ($visited as $place)
-      <li>{{ $place->name }}</li>
-      @endforeach
-    </ul>
+    <a href="{{ route('wished') }}">Places I'd Like to Visit</a>
+    </br>
+    <a href="{{ route('visited') }}">Places I've Already Been To</a>
+    <p>Powered by <strong>Laravel</strong></p>
   </body>
 </html>
