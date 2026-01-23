@@ -10,7 +10,7 @@ $query2 = "SELECT * FROM places where visited = true";
 $wished = pg_exec($db_handle, $query1);
 $visited = pg_exec($db_handle, $query2);
 
-echo "<h1>My Travel Bucket List after change</h1>";
+echo "<h1>My Travel Bucket List deploy</h1>";
 
 if ($wished && $visited) {
 	echo "<h2>Places I'd Like to Visit</h2>";
