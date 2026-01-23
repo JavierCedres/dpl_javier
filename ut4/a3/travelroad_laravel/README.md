@@ -130,13 +130,13 @@ Como paso adicional cambiaremos un poco el código de la aplicación, de forma q
 
 **Wished:**
 
-<img src="./imgs/Captura de pantalla 2026-01-23 221804.png" />
 <img src="./imgs/Captura de pantalla 2026-01-23 222901.png" />
+<img src="./imgs/Captura de pantalla 2026-01-23 233212.png" />
 
 **Visited:**
 
-<img src="./imgs/Captura de pantalla 2026-01-23 221755.png" />
 <img src="./imgs/Captura de pantalla 2026-01-23 222853.png" />
+<img src="./imgs/Captura de pantalla 2026-01-23 233208.png" />
 
 ##### 5. Script de despliegue en funcionamiento.
 
